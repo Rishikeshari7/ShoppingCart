@@ -1,31 +1,33 @@
-.nav-cont{
-    width: 100vw;
-    height: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(10, 18, 41, 0.998);
-    font-size: 1.2rem;
-    color: #fff;
-    padding-bottom: 0.5rem;
+.nav-cont {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(10, 18, 41, 0.998);
+  font-size: 1.2rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
 }
-.Shoshy{
-    font-size: 2rem;
+.Shoshy {
+  font-size: 2rem;
 }
-.s{
-    font-size: 2.6rem;
-    color: rgb(216, 34, 86);
+.s {
+  font-size: 2.6rem;
+  color: rgb(216, 34, 86);
 }
-.nav-cont-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.nav-cont-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
-.home{
-    font-weight: 500;
-    color: #fff;
+.home {
+  font-weight: 500;
+  color: #fff;
 }
-.cart{
-    margin-top: 7px; color: rgb(216, 34, 86);font-size: 1.3rem;
+.cart {
+  margin-top: 7px;
+  color: rgb(216, 34, 86);
+  font-size: 1.3rem;
 }
