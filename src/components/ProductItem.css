@@ -50,3 +50,12 @@
     background-color: rgb(237, 51, 104);
     color: #fff;
 }
+.pr-it-btn-r{
+    border: none;
+    color: #fff;
+    background-color: rgba(10, 18, 41, 0.998);
+}
+.pr-it-btn-r:hover{
+    transform: scale(0.95);
+    background-color: rgba(10, 18, 41, 0.998)
+}

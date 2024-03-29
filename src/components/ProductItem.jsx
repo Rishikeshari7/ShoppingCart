@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "./ProductItem.css"
 import { useDispatch, useSelector } from 'react-redux'
-import { addCart } from '../router/slice'
+import { addCart, removeCart } from '../router/slice'
 
 const ProductItem = ({item}) => {
     const cart=useSelector((state)=>state.cart); 
@@ -21,10 +21,9 @@ const ProductItem = ({item}) => {
          {/* to be modified for add or remove and toast to be added */}
         <>
           {
-            true?
-            (<button onClick={()=>dispatch((addCart(item)))} className='pr-it-btn'>Add to cart</button>):
-
-            (<button className='pr-it-btn-r'>Remove from cart</button>)
+            cart.some((ele)=>(ele.id===item.id))?
+            (<button onClick={()=>{dispatch(removeCart(item.id));console.log(item.id)}} className='pr-it-btn-r pr-it-btn'>Remove Item</button>):
+            (<button onClick={()=>dispatch((addCart(item)))} className='pr-it-btn'>Add to Cart</button>)
           }
         </>
       </div>
