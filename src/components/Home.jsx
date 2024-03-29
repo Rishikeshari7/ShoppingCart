@@ -11,7 +11,7 @@ const Home = () => {
     const data = await response.json();
     setDataItem(data);
     console.log("Data item hai", dataItem);
-  };
+  }
   useEffect(() => {
     fetchData();
   }, []);

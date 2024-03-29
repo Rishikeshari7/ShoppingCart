@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
     }
 .pr-it-img{
     width: 200px;
@@ -13,7 +14,7 @@
     object-fit: contain;
 }
 .pr-it-cont-2{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@
     font-size: 1.4rem;
     font-weight: 700;
 }
-.pr-it-price:hover{
+.line:hover{
     text-decoration: underline;
 }
 .pr-it-btn{
