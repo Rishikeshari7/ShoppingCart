@@ -1,0 +1,31 @@
+.cart-item-cont{
+    max-width: 590px;
+    display: flex;
+    border-bottom: 3px solid black;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+.crt-itm-img{
+    height: 220px;
+    width: 220px;
+    object-fit: contain;
+}
+.crt-it-inr{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.del-price-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dlt-cont{
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    background-color:  rgba(216, 34, 85, 0.285);
+    border-radius: 50%;
+}
+.dlt{
+    font-size: 1.3rem;color: red;
+}

@@ -6,9 +6,6 @@ import { addCart, removeCart } from '../router/slice'
 const ProductItem = ({item}) => {
     const cart=useSelector((state)=>state.cart); 
     const dispatch =useDispatch();
-  useEffect(()=>{
-    console.log("carrt hai",cart)
-  },[cart])
    
   return (
     <div className='ProductItem-cont'>
@@ -22,7 +19,7 @@ const ProductItem = ({item}) => {
         <>
           {
             cart.some((ele)=>(ele.id===item.id))?
-            (<button onClick={()=>{dispatch(removeCart(item.id));console.log(item.id)}} className='pr-it-btn-r pr-it-btn'>Remove Item</button>):
+            (<button onClick={()=>dispatch(removeCart(item.id))} className='pr-it-btn-r pr-it-btn'>Remove Item</button>):
             (<button onClick={()=>dispatch((addCart(item)))} className='pr-it-btn'>Add to Cart</button>)
           }
         </>
