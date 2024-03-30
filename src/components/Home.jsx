@@ -7,26 +7,31 @@ const Home = () => {
   const API_URL = "https://fakestoreapi.com/products";
   const [dataItem, setDataItem] = useState(0);
   const fetchData = async () => {
-    const response = await fetch(API_URL);
-    const data = await response.json();
-    setDataItem(data);
-    console.log("Data item hai", dataItem);
-  }
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      setDataItem(data);
+      console.log("Data item hai", dataItem);
+    } catch (err) {
+      console.log("error while fetching",err)
+    }
+  };
   useEffect(() => {
     fetchData();
   }, []);
   return (
     <>
-        {dataItem.length > 0 ?
+      {dataItem.length > 0 ? (
         <div className="home-cont">
-            {
-                dataItem.map((item,)=>(<ProductItem key={item.id} item={item}/>))
-            }
+          {dataItem.map((item) => (
+            <ProductItem key={item.id} item={item} />
+          ))}
         </div>
-        :
-        <Spinner/>
-        }
+      ) : (
+        <Spinner />
+      )}
     </>
-  )};
+  );
+};
 
 export default Home;

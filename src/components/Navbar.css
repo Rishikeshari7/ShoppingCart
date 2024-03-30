@@ -31,3 +31,20 @@
   color: rgb(216, 34, 86);
   font-size: 1.3rem;
 }
+.cart-ic-cont{
+position: relative;
+}
+.cat-len{
+  position: absolute;
+  top:10;
+  animation: up 1s;
+}
+@keyframes up 
+{
+  100%{
+    top:10;
+  };
+  0%{
+    top:0;
+  }
+}
